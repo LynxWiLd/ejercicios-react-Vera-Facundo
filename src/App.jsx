@@ -1,15 +1,24 @@
+import { useState } from "react";
 import Saludo from "./components/Saludo";
 
 function App() {
+  const saludo = "my friend";
+  const [msj, setMsj] = useState(""); // state inicial vacío
+
+  const handleClick = () => {
+    setMsj("(from changed state)"); // cambia el state al hacer click
+  };
+
   return (
     <>
-      <header className="py-3 text-center">
-        <h1 className="display-4">Primera App con React</h1>
-      </header>
-      <main>
-        <Saludo>  
-        </Saludo>
-      </main>
+      <section className="py-3 container">
+        <h1 className="display-4">
+          <Saludo saludo={`${saludo} ${msj}!`} />
+        </h1>
+        <div>
+          <button onClick={handleClick}>Click me</button>
+        </div>
+      </section>
     </>
   );
 }
