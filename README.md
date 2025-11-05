@@ -1,16 +1,34 @@
-# React + Vite
+# Ejercicios 01-02-03 React  
+Proyecto: Fundamentos de React con Vite  
+Autor: Facundo Javier Vera  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🧠 Descripción  
+Este repositorio reúne los primeros tres ejercicios realizados con Vite + React donde aprendí a:  
+- Inicializar la estructura de un proyecto React con Vite.  
+- Mostrar un mensaje simple en pantalla.  
+- Usar **props** para pasar datos entre componentes.  
+- Usar **state** dentro de un componente React para manejar cambios dinámicos.
 
-Currently, two official plugins are available:
+## ✅ Qué aprendí  
+- Cómo crear un nuevo proyecto en React usando Vite.  
+- Cómo configurar y ejecutar el entorno de desarrollo local.  
+- Cómo construir componentes funcionales simples.  
+- Cómo definir y utilizar props para recibir datos en un componente hijo.  
+- Cómo definir y actualizar el state (por ejemplo mediante `useState`) para que el componente reaccione a la interacción del usuario.  
+- Cómo ver los resultados en el navegador y experimentar con React de forma básica.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📁 Estructura del proyecto  
+```text
+/ejercicio-01-02-03-react-Vera-Facundo
+  ├─ /public
+  ├─ /src
+      ├─ main.jsx            ← punto de entrada de Vite
+      ├─ App.jsx             ← componente principal
+      ├─ components/         ← carpeta para los componentes de los ejercicios
+      │   ├─ Ejercicio01.jsx  
+      │   ├─ Ejercicio02.jsx  
+      │   └─ Ejercicio03.jsx  
+  ├─ package.json
+  ├─ vite.config.js
+  └─ README.md
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
